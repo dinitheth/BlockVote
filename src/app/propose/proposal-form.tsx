@@ -62,10 +62,10 @@ export function ProposalForm() {
   });
 
   const onSubmit = (values: FormValues) => {
-    if (!authenticated || !user?.wallet?.address) {
-        login();
-        return;
-    }
+    // This function will only be called if the user is authenticated.
+    // If not, the button's onClick will handle the login prompt.
+    if (!user?.wallet?.address) return;
+
     startTransition(async () => {
       const response = await createProposalAction({
         ...values,
@@ -81,6 +81,15 @@ export function ProposalForm() {
     });
   };
 
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!authenticated) {
+      login();
+    } else {
+      form.handleSubmit(onSubmit)();
+    }
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -91,7 +100,7 @@ export function ProposalForm() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form onSubmit={handleFormSubmit} className="space-y-8">
             <FormField
               control={form.control}
               name="title"
