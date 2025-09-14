@@ -10,7 +10,7 @@ export function Providers({ children }: { children: ReactNode }) {
       appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID!}
       config={{
         loginMethodsAndOrder: {
-          primary: ['email','privy:cm04asygd041fmry9zmcyn5o5'],
+          primary: ['privy:cm04asygd041fmry9zmcyn5o5'],
         },
       }}
     >
