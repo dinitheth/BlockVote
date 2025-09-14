@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "candidate-1",
+      "description": "A portrait of a candidate",
+      "imageUrl": "https://picsum.photos/seed/101/400/400",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "candidate-2",
+      "description": "A portrait of another candidate",
+      "imageUrl": "https://picsum.photos/seed/102/400/400",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "candidate-3",
+      "description": "A portrait of a third candidate",
+      "imageUrl": "https://picsum.photos/seed/103/400/400",
+      "imageHint": "business person"
+    },
+    {
+      "id": "candidate-4",
+      "description": "A portrait of a fourth candidate",
+      "imageUrl": "https://picsum.photos/seed/104/400/400",
+      "imageHint": "woman leader"
+    }
+  ]
+}
