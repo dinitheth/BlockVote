@@ -38,16 +38,16 @@ Before running the application, you need to configure your environment variables
 
 ```
 # The public address of your deployed BlockVote smart contract
-NEXT_PUBLIC_CONTRACT_ADDRESS="0x3Cc2935E31B4D9250Ff7f85EaB691B38A702C877"
+NEXT_PUBLIC_CONTRACT_ADDRESS=""
 
 # Your public App ID from Privy.io for wallet connections
 NEXT_PUBLIC_PRIVY_APP_ID="YOUR_PRIVY_APP_ID"
 
 # (Optional) Your private RPC URL for the blockchain network to avoid public rate limits
-NEXT_PUBLIC_RPC_URL="https://api.mainnet.abs.xyz"
+NEXT_PUBLIC_RPC_URL=""
 
 # Your API key from a block explorer (e.g., Etherscan) to fetch wallet balances
-NEXT_PUBLIC_ETHERSCAN_API_KEY="JKSY95KC1N3SUE9N9BPD6VWYVTMN6MINDG"
+NEXT_PUBLIC_ETHERSCAN_API_KEY=""
 
 ```
 
